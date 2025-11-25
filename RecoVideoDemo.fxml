@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+
+<BorderPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="RecoVideoController">
+            <bottom>
+                <HBox alignment="center">
+                    <padding>
+                        <Insets bottom="25" left="25" right="25" top="25" />
+                    </padding>
+                    <Button fx:id="button" alignment="center" onAction="#startCamera" text="Start" />
+                </HBox>
+            </bottom>
+            <center>
+                <ImageView fx:id="currentFrame"/>
+            </center>
+   <left>
+      <Box depth="100" height="100" width="100" BorderPane.alignment="CENTER" />
+   </left>
+
+</BorderPane>
